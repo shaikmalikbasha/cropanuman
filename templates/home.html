@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CROPANUMAN
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url({{url_for('static', filename='field.jpg')}});
+            }
+
+        </style>
+
+    </head>
+    <body >
+
+        <center>
+            <h1 >WELCOME TO CROPANUMAN</h1><br>
+            <form method="POST", action="{{url_for('home')}}">
+                <b>
+                    TEMPERATURE : <input type="text", name="a", placeholder="enter input"><br><br>
+                    HUMIDITY    : <input type="text", name="b", placeholder="enter input"><br><br>
+                    ph          : <input type="text", name="c", placeholder="enter input"><br><br>
+                    Rainfall    : <input type="text", name="d", placeholder="enter input"><br><br><br>
+                </b>
+                    <input type="submit" , value="predict!">
+            </form>
+
+       </center>
+</html>
