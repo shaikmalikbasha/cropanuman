@@ -10,15 +10,14 @@
                 padding: 0;
             }
             body{
-                background-image: url({{url_for('static', filename='field.jpg')}});
+                background-image: url("{{url_for('static', filename='field.jpg')}}");
             }
 
         </style>
 
     </head>
     <body >
-
-        <center>
+        <div align="center">
             <h1 >WELCOME TO CROPANUMAN</h1><br>
             <form method="POST", action="{{url_for('home')}}">
                 <b>
@@ -29,6 +28,5 @@
                 </b>
                     <input type="submit" , value="predict!">
             </form>
-
-       </center>
+       </div>
 </html>
